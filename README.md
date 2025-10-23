@@ -61,10 +61,10 @@ conn.close()
 
 ```bash
 # 개발 모드
-uvicorn src.okky_jobs.api.api_main:app --reload --host 0.0.0.0 --port 8000
+uvicorn src.okky_jobs.api.api_main:app --reload --host 0.0.0.0 --port 8002
 
 # 프로덕션 모드
-uvicorn src.okky_jobs.api.api_main:app --host 0.0.0.0 --port 8000
+uvicorn src.okky_jobs.api.api_main:app --host 0.0.0.0 --port 8002
 ```
 
 ### 4. 크롤링 실행
@@ -184,7 +184,7 @@ conn.close()
 "
 
 # 2. API 서버 테스트
-curl http://localhost:8000/
+curl http://localhost:8002/
 
 # 3. 크롤링 테스트 (선택사항)
 python -m src.okky_jobs.scripts.run_crawling

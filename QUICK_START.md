@@ -25,19 +25,19 @@ cp env.example .env
 python main.py
 
 # 또는 직접 uvicorn 실행
-uvicorn src.okky_jobs.api.api_main:app --reload --host 0.0.0.0 --port 8000
+uvicorn src.okky_jobs.api.api_main:app --reload --host 0.0.0.0 --port 8002
 ```
 
 ### 3. API 테스트
 ```bash
 # API 상태 확인
-curl http://localhost:8000/
+curl http://localhost:8002/
 
 # 채용공고 검색
-curl "http://localhost:8000/search?keyword=python&page=1&limit=10"
+curl "http://localhost:8002/search?keyword=python&page=1&limit=10"
 
 # 통계 정보
-curl http://localhost:8000/search/stats
+curl http://localhost:8002/search/stats
 ```
 
 ## 🐳 Docker 실행
@@ -61,7 +61,7 @@ docker-compose logs -f okky-jobs-backend
 docker build -t okky-jobs-backend .
 
 # 컨테이너 실행
-docker run -p 8000:8000 --env-file .env okky-jobs-backend
+docker run -p 8002:8000 --env-file .env okky-jobs-backend
 ```
 
 ## 📋 주요 명령어
