@@ -1,0 +1,29 @@
+# 웹 검색 및 API
+requests==2.31.0
+python-dotenv==1.0.0
+google-api-python-client==2.108.0
+
+# FastAPI 및 웹 서버
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+httpx==0.25.2
+aiofiles==23.2.1
+python-multipart==0.0.6
+
+# 파일 전송
+paramiko==3.4.0
+
+# OKKY 채용공고 크롤링
+beautifulsoup4>=4.12.3
+selenium>=4.21.0
+webdriver-manager>=4.0.1
+pandas>=2.2.2
+openpyxl>=3.1.5
+pymysql>=1.1.1
+schedule>=1.2.1
+
+# 테스트
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
