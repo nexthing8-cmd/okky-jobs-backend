@@ -5,7 +5,7 @@ services:
       platforms:
         - linux/amd64
     ports:
-      - "8002:8000"
+      - "8002:8002"
     environment:
       - DB_HOST=${DB_HOST:-localhost}
       - DB_USER=${DB_USER:-crawling}
@@ -14,7 +14,7 @@ services:
       - DB_PORT=${DB_PORT:-3306}
       - ROOT_PATH=${ROOT_PATH:-/okky}
       - HOST=0.0.0.0
-      - PORT=8000
+      - PORT=8002
       - RELOAD=false
     volumes:
       - ./logs:/app/logs

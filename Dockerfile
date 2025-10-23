@@ -35,7 +35,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 포트 노출
-EXPOSE 8000
+EXPOSE 8002
 
 # 환경 변수 설정
 ENV PYTHONPATH=/app

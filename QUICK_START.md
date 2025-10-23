@@ -61,7 +61,7 @@ docker-compose logs -f okky-jobs-backend
 docker build -t okky-jobs-backend .
 
 # 컨테이너 실행
-docker run -p 8002:8000 --env-file .env okky-jobs-backend
+docker run -p 8002:8002 --env-file .env okky-jobs-backend
 ```
 
 ## 📋 주요 명령어

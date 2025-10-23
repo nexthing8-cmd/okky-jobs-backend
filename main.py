@@ -10,7 +10,7 @@ from src.okky_jobs.api.api_main import app
 if __name__ == "__main__":
     # 환경 변수에서 포트와 호스트 설정
     host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 8000))
+    port = int(os.getenv("PORT", 8002))
     reload = os.getenv("RELOAD", "false").lower() == "true"
     root_path = os.getenv("ROOT_PATH", "/okky")
     
